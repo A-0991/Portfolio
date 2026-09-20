@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amit Kumar Pandey | Data Analyst </title>
+  <meta name="description" content="Portfolio of Amit Kumar Pandey — aspiring Data Analyst skilled in SQL, Python, Excel, Power BI and Tableau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    :root{--bg:#07111f;--card:#0d1b2d;--card2:#10233a;--text:#eef5ff;--muted:#a9bad0;--accent:#55d6be;--accent2:#63a4ff;--border:rgba(255,255,255,.09)}
+    *{box-sizing:border-box;scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,system-ui,sans-serif;background:radial-gradient(circle at 85% 10%,rgba(99,164,255,.16),transparent 28%),radial-gradient(circle at 10% 20%,rgba(85,214,190,.09),transparent 25%),var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    nav{position:sticky;top:0;z-index:10;background:rgba(7,17,31,.8);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+    nav .inner{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:1.15rem}.logo span{color:var(--accent)}
+    nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0;color:var(--muted);font-size:.92rem}nav li a:hover{color:var(--text)}
+    .hero{min-height:calc(100vh - 72px);display:grid;place-items:center;padding:70px 0}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:50px;align-items:center}
+    .eyebrow{color:var(--accent);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem}.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.02;margin:15px 0}.hero h1 span{color:var(--accent)}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:700px}.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--border);font-weight:700}.primary{background:var(--accent);color:#06201b;border-color:var(--accent)}.secondary{background:rgba(255,255,255,.04)}
+    .hero-card{background:linear-gradient(145deg,var(--card2),var(--card));border:1px solid var(--border);border-radius:22px;padding:28px;box-shadow:0 20px 70px rgba(0,0,0,.25)}.avatar{width:86px;height:86px;border-radius:22px;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#06131e;font-size:2rem;font-weight:800;margin-bottom:20px}.hero-card h3{margin:0 0 6px}.hero-card p{font-size:.92rem;margin:0 0 20px}.stat{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid var(--border);color:var(--muted)}.stat strong{color:var(--text)}
+    section{padding:90px 0}.section-title{font-size:2rem;margin:0 0 10px}.section-sub{color:var(--muted);margin:0 0 35px}
+    .about-grid,.projects,.skills-grid,.timeline{display:grid;gap:20px}.about-grid{grid-template-columns:1fr 1fr}.card{background:rgba(13,27,45,.78);border:1px solid var(--border);border-radius:18px;padding:25px}.card h3{margin-top:0}.muted{color:var(--muted)}
+    .skills-grid{grid-template-columns:repeat(4,1fr)}.skill-group h3{font-size:1rem}.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:7px 10px;background:rgba(99,164,255,.08);border:1px solid var(--border);border-radius:8px;color:#cfe0f6;font-size:.84rem}
+    .projects{grid-template-columns:repeat(2,1fr)}.project{position:relative;overflow:hidden}.project:before{content:"";display:block;height:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));position:absolute;left:0;right:0;top:0}.project h3{margin-top:8px}.project .stack{color:var(--accent);font-size:.84rem;font-weight:700}.project ul{padding-left:19px;color:var(--muted)}
+    .timeline{grid-template-columns:1fr}.job{display:grid;grid-template-columns:190px 1fr;gap:25px}.date{color:var(--accent);font-weight:700}.job h3{margin:0 0 3px}.job p{margin:0;color:var(--muted)}
+    .edu{display:grid;grid-template-columns:1fr 1fr;gap:20px}.achievement{display:flex;gap:14px;align-items:flex-start}.icon{min-width:40px;height:40px;border-radius:10px;display:grid;place-items:center;background:rgba(85,214,190,.1);color:var(--accent);font-weight:800}
+    .contact{display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact a{color:var(--accent)}footer{border-top:1px solid var(--border);padding:30px 0;color:var(--muted);text-align:center;font-size:.9rem}
+    @media(max-width:800px){nav ul{display:none}.hero-grid,.about-grid,.projects,.skills-grid,.edu,.contact{grid-template-columns:1fr}.job{grid-template-columns:1fr;gap:4px}.hero{padding-top:45px}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+<nav>
+  <div class="container inner">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="C:\Users\AMIT PANDEY\OneDrive\Desktop\resume\My Portfolio\logo.png"alt="Logo Icon" class="logo-icon">
+    </div>
+
+    <!-- Navigation Menu (moved inside container) -->
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero"><div class="container hero-grid">
+  <div>
+    <div class="eyebrow">Data Analyst • AI/ ML & Analytics</div>
+    <h1>Turning data into <span>actionable insights.</span></h1>
+    <p>Hi, I'm <strong>Amit Kumar Pandey</strong>, an aspiring Data Analyst with hands-on experience in SQL, Python, Excel, Power BI and Tableau. I enjoy cleaning complex datasets, finding meaningful patterns and building dashboards that make information easier to understand.</p>
+    <div><div class="button"><a class="btn primary" href="#projects">View Projects</a><span> </span><a class="btn secondary" href="#contact">Contact Me</a></div></div>
+</div>
+  <div class="hero-card"><div class="avatar"><img src="C:\Users\AMIT PANDEY\OneDrive\Desktop\resume\My Portfolio\my pic.png"alt="avatar" class="avatar"></div><h3>Amit Kumar Pandey</h3><p>Data Analyst | AI/ML | Python | SQL | Power BI</p>
+    <div class="stat"><span>Based in</span><strong>Gurgaon, India</strong></div>
+    <div class="stat"><span>Experience</span><strong>Data Annotation / AI-ML</strong></div>
+    <div class="stat"><span>Education</span><strong>B.Tech IT</strong></div>
+  </div>
+</div></header>
+
+<section id="about"><div class="container"><h2 class="section-title">About Me</h2><p class="section-sub">A practical, data-focused profile built around analysis, visualization and quality.</p>
+<div class="about-grid"><div class="card"><h3>What I do</h3><p class="muted">I work with structured datasets to perform data cleaning, exploratory data analysis, statistical analysis, KPI reporting and visualization. My toolkit includes Python, SQL, Excel, Power BI, Tableau, Pandas and NumPy.</p></div>
+<div class="card"><h3>What I bring</h3><p class="muted">My Data Annotator experience strengthened my attention to detail, data quality and analytical workflows while supporting AI/ML projects. I also bring software-development and problem-solving experience from academic projects.</p></div></div></div></section>
+
+<section id="skills"><div class="container"><h2 class="section-title">Skills</h2><p class="section-sub">Tools and concepts I use across analytics and data workflows.</p>
+<div class="skills-grid">
+<div class="card skill-group"><h3>Programming</h3><div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">C/C++</span><span class="tag">R</span></div></div>
+<div class="card skill-group"><h3>Analytics</h3><div class="tags"><span class="tag">Excel</span><span class="tag">Power BI</span><span class="tag">Tableau</span><span class="tag">Pandas</span><span class="tag">NumPy</span></div></div>
+<div class="card skill-group">
+  <h3>AI/ML & Development</h3>
+  <div class="tags">
+    <span class="tag">LLM</span>
+    <span class="tag">RAG</span>
+    <span class="tag">Generative AI</span>
+    <span class="tag">OpenAI</span>
+    <span class="tag">Prompt Engineering</span>
+    <span class="tag">SDLC</span>
+    <span class="tag">REST APIs</span>
+  </div>
+</div>
+<div class="card skill-group"><h3>Data & Tools</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">NoSQL</span><span class="tag">Git/GitHub</span><span class="tag">Data Warehousing</span></div></div>
+<div class="card skill-group"><h3>Core Concepts</h3><div class="tags"><span class="tag">EDA</span><span class="tag">Data Cleaning</span><span class="tag">Statistics</span><span class="tag">KPI Reporting</span><span class="tag">Data Visualization</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="container"><h2 class="section-title">Featured Projects</h2><p class="section-sub">Selected projects from my analytics and machine-learning work.</p>
+<div class="projects">
+<div class="card project"><div class="stack">PYTHON • SQL • POWER BI • SCIKIT-LEARN</div><h3>Crime Pattern Detection Using Historical Crime Data</h3><ul><li>Analyzed historical crime datasets to identify trends and behavioral patterns.</li><li>Performed preprocessing, cleaning and feature engineering.</li><li>Conducted EDA on large datasets to generate actionable insights.</li><li>Built interactive dashboards and visual reports for crime monitoring.</li><li>Applied machine-learning techniques for predictive crime pattern analysis.</li></ul></div>
+<div class="card project"><div class="stack">EXCEL • POWER BI • SQL</div><h3>Sales & Business Insights Dashboard</h3><ul><li>Created interactive dashboards for sales performance, revenue trends and customer behavior.</li><li>Used Pivot Tables, charts and KPI metrics for business reporting.</li><li>Cleaned and transformed raw business datasets.</li><li>Automated reporting workflows to improve data accessibility and efficiency.</li></ul></div>
+</div></div></section>
+
+<section id="experience"><div class="container"><h2 class="section-title">Experience</h2><p class="section-sub">Professional experience supporting AI/ML data workflows.</p>
+<div class="timeline"><div class="card job"><div class="date">Jun 2025 – Dec 2025</div><div><h3>Data Annotator — ANOLYTICS, Noida</h3><p>Performed annotation and categorization of image, text and video datasets for AI/ML projects. Maintained accuracy and consistency across large-scale datasets, collaborated with QA teams to validate data quality, and followed analytical workflows supporting model training.</p></div></div></div></div></section>
+
+<section id="education"><div class="container"><h2 class="section-title">Education</h2><p class="section-sub">Academic background</p>
+<div class="edu"><div class="card"><h3>B.Tech. in Information Technology</h3><p class="muted">ABES Engineering College, Ghaziabad · Nov 2022 – Jul 2025</p><strong>CGPA: 6.9/10</strong><p class="muted">Coursework: OOPS, DSA, Operating Systems, Machine Learning, Blockchain, Statistical Analysis.</p></div>
+<div class="card"><h3>Diploma in Electrical Engineering</h3><p class="muted">Little Flower Polytechnic, Gorakhpur · Aug 2019 – Jul 2022</p><strong>Percentage: 73%</strong><p class="muted">Coursework: Electrical Machines, Power Systems, Circuit Theory, Power Electronics, Control Systems, Electrical Measurements, Switchgear & Protection, Electrical Wiring & Maintenance.
+</p></div></div>
+<br>
+<section id="certifications">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <p class="section-sub">
+      Professional courses and certifications in data analytics, AI, Python, Excel and SQL.
+    </p>
+
+    <div class="projects">
+
+      <div class="card project">
+        <div class="stack">DATA ANALYTICS • EXCEL • PYTHON</div>
+        <h3>Data Analytics & Visualization: Using Excel and Python</h3>
+        <p class="muted">
+          Certification focused on data analytics and visualization using Excel and Python.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/17v3myFKoERYd-vP7fLPnc2eY4MlEqHyO/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="stack">AI ENGINEERING • AI/ML</div>
+        <h3>The Ultimate AI Engineer Job Preparation Course (2026)</h3>
+        <p class="muted">
+          Job preparation course covering skills and concepts relevant to AI Engineering roles.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/1oJtsFbzDVMQQk1C-xPiWn5tuXdkrXZqe/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="stack">EXCEL • VBA • AUTOMATION</div>
+        <h3>Learn Advanced Excel: Formulas, Functions, VBA Macros</h3>
+        <p class="muted">
+          Advanced Excel training covering formulas, functions and VBA macros.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/1ucRZF-SDFkoTeIVguwL9KASb7O5GEUdI/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="stack">PYTHON • PROGRAMMING</div>
+        <h3>Master Python Programming: Beginner to Advance</h3>
+        <p class="muted">
+          Python programming course covering beginner to advanced concepts.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/1IWcz0ZUFhbLodxa6mXxVMT-M7yIaTqRI/view?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="stack">SQL • DATABASE</div>
+        <h3>SQL: Basic and Intermediate</h3>
+        <p class="muted">
+          SQL training covering basic and intermediate database querying concepts.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/1RTfg3_HbYRZZX0Suv77xURGg8EVxNgDE/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+      <div class="card project">
+        <div class="stack">CERTIFICATION</div>
+        <h3>Additional Certification</h3>
+        <p class="muted">
+          Additional professional certification.
+        </p>
+        <div class="buttons">
+          <a
+            class="btn secondary"
+            href="https://drive.google.com/file/d/1nsEJL8RUN1-Ydv-okELZ0ojxDmm_WLsO/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer">
+            View Certificate ↗
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<br>
+<div class="about-grid">
+<div class="card">
+  <div class="achievement">
+    <div class="icon">01</div>
+    <div>
+      <h3>Research Paper</h3>
+      <p class="muted">
+        Published a research paper at the 3rd International Conference (IEEE), 2025.
+      </p>
+      <a 
+        href="https://drive.google.com/file/d/1pTjGacQXhWOQqpuvys6Ne-HgTvvccq0X/view?usp=drive_link" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="btn secondary"
+      >
+        View Research Paper Certificate ↗
+      </a>
+    </div>
+  </div>
+</div><div class="card"><div class="achievement"><div class="icon">02</div><div><h3>Problem Solving</h3><p class="muted">Solved 200+ problems on LeetCode and achieved 4★ in Problem Solving plus 3★ in Python, C and C++ on HackerRank.</p></div></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container"><h2 class="section-title">Let's Connect</h2><p class="section-sub">Open to Data Analyst, Analytics and AI/data-focused opportunities.</p>
+<div class="contact"><div class="card"><h3>Email</h3><a href="mailto:amitkumarpandey048@gmail.com">amitkumarpandey048@gmail.com</a><h3 style="margin-top:22px">Phone</h3><a href="tel:+919792106561">+91 9792106561</a></div>
+<div class="card">
+    <h3>Profiles</h3>
+    <p class="muted">Connect with me on LinkedIn and GitHub.</p>
+
+    <div class="buttons">
+        <a 
+            class="btn secondary" 
+            href="https://www.linkedin.com/in/amitkumarpandey091/" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
+        <a 
+            class="btn secondary" 
+            href="https://github.com/A-0991" 
+            target="_blank" 
+            rel="noopener noreferrer">
+            GitHub
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

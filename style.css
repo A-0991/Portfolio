@@ -1,0 +1,100 @@
+/* Container flex layout */
+.container.inner {
+  display: flex;
+  justify-content: space-between; /* Pushes logo left, nav links right */
+  align-items: center;            /* Aligns items vertically in the center */
+  padding: 15px 30px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Logo styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  width: 60px;
+  height: auto;
+}
+
+/* Navigation items styling */
+.nav-links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;                      /* Spacing between navigation options */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #a0aec0;                 /* Muted text color for dark mode */
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+/* Card Container */
+.hero-card {
+  max-width: 550px;
+  max-height: 800px;
+  margin: 20px auto;
+  padding: 34px 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Avatar Container & Image */
+.hero-card .avatar {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 16px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.hero-card img.avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #eeeff1; /* Accent border color */
+  box-shadow: 0 4px 12px rgba(3, 27, 80, 0.2);
+}
+
+/* Name Heading */
+.hero-card h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #f6f7f9;
+}
+
+/* Subtitle / Bio Text */
+.hero-card p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 0.5;
+  font-weight: 300;
+}
+.buttons:hover {
+  transform: translateY(-5px);
+  color:#55d6be
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}

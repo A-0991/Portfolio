@@ -140,3 +140,10 @@
   margin: 20px auto;
   text-align: center;
 }
+
+.cv-download {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 40px;
+}

@@ -93,6 +93,41 @@
   line-height: 0.5;
   font-weight: 300;
 }
+
+#experience .timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+#experience .job {
+  display: grid;
+  grid-template-columns: 245px minmax(0, 1fr);
+  align-items: start;
+  gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#experience .date {
+  white-space: nowrap;
+}
+
+#experience .job h3 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  #experience .job {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  #experience .date {
+    white-space: normal;
+  }
+}
 .buttons:hover {
   transform: translateY(-5px);
   color:#55d6be

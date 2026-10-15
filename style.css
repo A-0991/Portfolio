@@ -133,14 +133,6 @@
   color:#55d6be
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-
-.btn.secondary {
-  display: block;
-  width: fit-content;
-  margin: 20px auto;
-  text-align: center;
-}
-
 .cv-download {
   display: flex;
   justify-content: center;

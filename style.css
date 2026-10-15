@@ -192,3 +192,59 @@
   width: 100%;
   margin-top: 40px;
 }
+
+/* FORCE HERO CONTENT LEFT AND PROFILE CARD RIGHT */
+@media (min-width: 801px) {
+    header.hero {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    header.hero > .container.hero-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) 360px !important;
+        align-items: center !important;
+        gap: 50px !important;
+        width: min(1120px, 92%) !important;
+        margin: 0 auto !important;
+    }
+
+    header.hero > .container.hero-grid > div:first-child {
+        grid-column: 1 !important;
+        min-width: 0 !important;
+    }
+
+    header.hero > .container.hero-grid > .hero-card {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        width: 100% !important;
+        max-width: 360px !important;
+        margin: 0 !important;
+        justify-self: end !important;
+        align-self: center !important;
+    }
+
+    header.hero .hero-card .avatar {
+        width: 100% !important;
+        max-width: 280px !important;
+        height: auto !important;
+        aspect-ratio: 1 / 1;
+        margin: 0 auto 18px !important;
+    }
+}
+
+/* STACK THE CARD ONLY ON SMALL SCREENS */
+@media (max-width: 800px) {
+    header.hero > .container.hero-grid {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 30px !important;
+    }
+
+    header.hero > .container.hero-grid > .hero-card {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        justify-self: center !important;
+        margin: 0 auto !important;
+    }
+}

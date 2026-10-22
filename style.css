@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  overflow-x: clip;
+}
+
+img {
+  max-width: 100%;
+}
 /* Fix images and prevent horizontal scrolling */
 * {
   box-sizing: border-box;

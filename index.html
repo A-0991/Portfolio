@@ -32,14 +32,25 @@
   </style>
 </head>
 <body>
+
 <nav>
   <div class="container inner">
-    <!-- Logo -->
-    <div class="logo">
-      <img src="logo.png" alt="Logo Icon" class="logo-icon"> <span> </span>Code with @mit</div>
+    <a href="#home" class="logo">
+      <img src="logo.png" alt="Logo" class="logo-icon">
+      <span>Code with @mit</span>
+    </a>
 
-    <!-- Navigation Menu (moved inside container) -->
-    <ul class="nav-links">
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="nav-links">
+      ☰
+    </button>
+
+    <ul class="nav-links" id="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
@@ -50,7 +61,7 @@
     </ul>
   </div>
 </nav>
-<header class="hero">
+<header class="hero" id="home">
   <div class="container hero-grid">
 
     <!-- LEFT SIDE: INTRODUCTION -->
@@ -78,7 +89,7 @@
     <aside class="hero-card">
 
       <div class="avatar">
-        <img src="./my-pic.png" alt="avatar">
+        <img src="./my-pic.png" alt="Amit Kumar Pandey">
       </div>
 
       <h3>Amit Kumar Pandey</h3>
@@ -143,6 +154,13 @@
       Professional experience supporting AI/ML data workflows.
     </p>
 
+<section id="experience">
+  <div class="container">
+    <h2 class="section-title">Experience</h2>
+    <p class="section-sub">
+      Professional experience supporting AI/ML data workflows.
+    </p>
+
     <div class="timeline">
       <div class="card job">
         <div class="date">Jun 2025 – Dec 2025</div>
@@ -152,12 +170,11 @@
             Performed annotation and categorization of image, text and video
             datasets for AI/ML projects. Maintained accuracy and consistency
             across large-scale datasets, collaborated with QA teams to
-            validate data quality, and followed analytical workflows
-            supporting model training.
+            validate data quality, and supported model training workflows.
           </p>
         </div>
       </div>
-      <div class="timeline">
+
       <div class="card job">
         <div class="date">Oct 2026 – Present</div>
         <div>
@@ -166,8 +183,7 @@
             Performed annotation and categorization of image, text and video
             datasets for AI/ML projects. Maintained accuracy and consistency
             across large-scale datasets, collaborated with QA teams to
-            validate data quality, and followed analytical workflows
-            supporting model training.
+            validate data quality, and supported model training workflows.
           </p>
         </div>
       </div>
@@ -185,7 +201,7 @@
     <p class="section-sub">
       Professional courses and certifications in data analytics, AI, Python, Excel and SQL.
     </p>
-
+  </section>
     <div class="projects">
 
       <div class="card project">
